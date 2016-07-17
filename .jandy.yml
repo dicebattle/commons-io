@@ -1,0 +1,13 @@
+languange: java
+
+batch-size: 256MB
+
+samples:
+  - IOUtilsTestCsae:
+      script: java -cp target/classes:target/test-classes:$(cat dep.txt) org.junit.runner.JUnitCore org.apache.commons.io.IOUtilsTestCase
+  - FileUTilsTestCase:
+      script: java -cp target/classes:target/test-classes:$(cat dep.txt) org.junit.runner.JUnitCore org.apache.commons.io.FileUtilsTestCase
+  - FilenameUtilsTestCsae:
+      script: java -cp target/classes:target/test-classes:$(cat dep.txt) org.junit.runner.JUnitCore org.apache.commons.io.FilenameUtilsTestCase
+  - FileSystemUtils:
+      script: java -cp target/classes:target/test-classes:$(cat dep.txt) org.junit.runner.JUnitCore org.apache.commons.io.FileSystemUtilsTestCase
