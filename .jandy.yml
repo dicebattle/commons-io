@@ -1,4 +1,4 @@
-languange: java
+language: java
 
 batch-size: 256MB
 
