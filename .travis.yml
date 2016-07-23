@@ -7,7 +7,7 @@ install:
 
 script:
   - mvn test
-  - travis_wait 30 jandy
+  - travis_wait 60 jandy
 
 notifications:
   - email: false
